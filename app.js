@@ -4,6 +4,8 @@
 const ICONS = {
   tiktok:
     '<svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 1 1-2.31-2.83v-3.5a6.37 6.37 0 1 0 5.76 6.33V8.69a8.2 8.2 0 0 0 4.77 1.52V6.76a4.84 4.84 0 0 1-1-.07z"/></svg>',
+  mail:
+    '<svg viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.8" d="M3 5.5h18v13H3zM3 6l9 7 9-7"/></svg>',
   instagram:
     '<svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2.16c3.2 0 3.58.01 4.85.07 3.25.15 4.77 1.69 4.92 4.92.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.15 3.23-1.66 4.77-4.92 4.92-1.27.06-1.64.07-4.85.07s-3.58-.01-4.85-.07c-3.26-.15-4.77-1.7-4.92-4.92C2.17 15.58 2.16 15.2 2.16 12s.01-3.58.07-4.85C2.38 3.92 3.9 2.38 7.15 2.23 8.42 2.17 8.8 2.16 12 2.16zm0 1.8c-3.15 0-3.52.01-4.77.07-2.43.11-3.56 1.26-3.67 3.67-.06 1.25-.07 1.62-.07 4.77s.01 3.52.07 4.77c.11 2.4 1.24 3.56 3.67 3.67 1.25.06 1.62.07 4.77.07s3.52-.01 4.77-.07c2.43-.11 3.56-1.27 3.67-3.67.06-1.25.07-1.62.07-4.77s-.01-3.52-.07-4.77c-.11-2.41-1.24-3.56-3.67-3.67-1.25-.06-1.62-.07-4.77-.07zm0 3.06a5 5 0 1 1 0 9.97 5 5 0 0 1 0-9.97zm0 1.8a3.18 3.18 0 1 0 0 6.37 3.18 3.18 0 0 0 0-6.37zm5.2-3.2a1.16 1.16 0 1 1 0 2.33 1.16 1.16 0 0 1 0-2.33z"/></svg>',
 };
@@ -66,7 +68,15 @@ async function main() {
       img.loading = 'lazy';
       a.append(img);
     }
-    a.append(el('span', 'card-label', link.label));
+    const text = el('span', 'card-text');
+    text.append(el('span', 'card-label', link.label));
+    if (link.sublabel) {
+      const sub = el('span', 'card-sublabel');
+      sub.innerHTML = `${ICONS.mail} `;
+      sub.append(document.createTextNode(link.sublabel));
+      text.append(sub);
+    }
+    a.append(text);
     list.append(a);
   }
   app.append(list);

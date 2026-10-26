@@ -37,6 +37,7 @@
     },
     {
       "label": "Contact Me",
+      "sublabel": "Email · leonardogranetto.business@gmail.com",
       "url": "mailto:leonardogranetto.business@gmail.com",
       "event": "click-contact"
     }

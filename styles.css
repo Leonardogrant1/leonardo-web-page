@@ -87,16 +87,34 @@ body {
   background: #3a3a3a;
 }
 
-.card-label {
+.card-text {
   flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
   text-align: center;
-  font-size: 1.05rem;
-  font-weight: 600;
   /* Label optisch zentrieren, Thumbnail-Breite ausgleichen */
   margin-right: 48px;
 }
 
-.card:not(.featured) .card-label:only-child { margin-right: 0; }
+/* Keine Thumbnail davor → kein Ausgleich nötig */
+.card .card-text:first-child { margin-right: 0; }
+
+.card-label {
+  font-size: 1.05rem;
+  font-weight: 600;
+}
+
+.card-sublabel {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  font-size: 0.85rem;
+  color: #9ca3af;
+}
+
+.card-sublabel svg { width: 15px; height: 15px; flex-shrink: 0; }
 
 /* Große JEMP-Karte: Bild oben, Label darunter */
 .card.featured {
@@ -112,7 +130,6 @@ body {
   background: #3a3a3a;
 }
 
-.card.featured .card-label {
+.card.featured .card-text {
   margin: 14px 0 8px;
-  margin-right: 0;
 }
