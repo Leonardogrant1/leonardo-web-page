@@ -1,0 +1,44 @@
+{
+  "profile": {
+    "name": "leonardogranetto",
+    "bio": "Entrepreneur & athlete 🇧🇷 Sharing tips to boost your performance! 💪✨",
+    "avatar": "assets/avatar.svg"
+  },
+  "socials": [
+    { "icon": "tiktok", "url": "https://www.tiktok.com/@leonardogranetto", "event": "social-tiktok" },
+    { "icon": "instagram", "url": "https://www.instagram.com/leonardo.granetto", "event": "social-instagram" }
+  ],
+  "links": [
+    {
+      "label": "JEMP – Get your Training Plan",
+      "url": "https://jemp.app",
+      "image": "assets/jemp.svg",
+      "event": "click-jemp",
+      "featured": true,
+      "refToUtm": true
+    },
+    {
+      "label": "TikTok",
+      "url": "https://www.tiktok.com/@leonardogranetto",
+      "image": "assets/tiktok.svg",
+      "event": "click-tiktok"
+    },
+    {
+      "label": "Instagram",
+      "url": "https://www.instagram.com/leonardo.granetto",
+      "image": "assets/instagram.svg",
+      "event": "click-instagram"
+    },
+    {
+      "label": "Instagram (Business)",
+      "url": "https://www.instagram.com/leo.granetto",
+      "image": "assets/instagram-business.svg",
+      "event": "click-instagram-business"
+    }
+  ],
+  "umami": {
+    "src": "https://analytics.leonardogranetto.com/stats",
+    "websiteId": "",
+    "domains": "leonardogranetto.com,www.leonardogranetto.com"
+  }
+}
