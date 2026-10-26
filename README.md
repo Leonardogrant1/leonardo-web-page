@@ -1,8 +1,10 @@
 # leonardo-web-page
 
-Link-in-Bio-Seite für **leonardogranetto.com** — statisches HTML, kein Build,
-gehostet auf Vercel. Analytics über selbst gehostetes Umami
-(`analytics.leonardogranetto.com`).
+Link-in-Bio-Seite für **leonardogranetto.com** — zur Build-Zeit vorgerendertes
+statisches HTML (`build.mjs` liest `content.json` und schreibt `dist/`),
+gehostet auf Vercel. Crawler und Browser bekommen fertiges HTML (SEO-freundlich);
+nur das `?ref`-Handling läuft als Mini-Script im Client. Analytics über selbst
+gehostetes Umami (`analytics.leonardogranetto.com`).
 
 ## Inhalte ändern
 
@@ -35,15 +37,12 @@ Felder pro Link:
 ## Lokal ansehen
 
 ```bash
-npx serve .
-# oder: python3 -m http.server 8000
+node build.mjs
+npx serve dist   # oder: python3 -m http.server 8000 -d dist
 ```
-
-(Einfaches Öffnen der index.html per Doppelklick funktioniert nicht,
-weil `content.json` per fetch geladen wird.)
 
 ## Deployment
 
-Vercel-Projekt auf dieses Repo zeigen lassen, Framework "Other", kein
-Build-Command — fertig. Domain `leonardogranetto.com` im Vercel-Projekt
-hinterlegen.
+Vercel-Projekt auf dieses Repo zeigen lassen — Build-Command und
+Output-Directory stehen in `vercel.json` (`node build.mjs` → `dist/`).
+Domain `leonardogranetto.com` im Vercel-Projekt hinterlegen.
