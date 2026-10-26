@@ -1,12 +1,20 @@
 {
   "profile": {
     "name": "Leonardo Granetto",
-    "bio": "Entrepreneur & Athlete 🇧🇷 Founder of JEMP — get your personal training plan and level up your performance 💪✨",
+    "bio": "I build apps for athletes, train combat sports and travel the world while doing both. Follow along for training, app building and life on the road.",
     "avatar": "assets/avatar.jpg"
   },
   "socials": [
-    { "icon": "tiktok", "url": "https://www.tiktok.com/@leonardogranetto", "event": "social-tiktok" },
-    { "icon": "instagram", "url": "https://www.instagram.com/leonardo.granetto", "event": "social-instagram" }
+    {
+      "icon": "tiktok",
+      "url": "https://www.tiktok.com/@leonardogranetto",
+      "event": "social-tiktok"
+    },
+    {
+      "icon": "instagram",
+      "url": "https://www.instagram.com/leonardo.granetto",
+      "event": "social-instagram"
+    }
   ],
   "links": [
     {
