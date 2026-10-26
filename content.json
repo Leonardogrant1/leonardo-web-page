@@ -24,16 +24,16 @@
       "event": "click-tiktok"
     },
     {
-      "label": "Instagram",
+      "label": "Instagram (Lifestyle)",
       "url": "https://www.instagram.com/leonardo.granetto",
-      "image": "assets/instagram.svg",
-      "event": "click-instagram"
+      "image": "assets/instagram-lifestyle.svg",
+      "event": "click-instagram-lifestyle"
     },
     {
-      "label": "Instagram (Business)",
+      "label": "Instagram",
       "url": "https://www.instagram.com/leo.granetto",
-      "image": "assets/instagram-business.svg",
-      "event": "click-instagram-business"
+      "image": "assets/instagram.svg",
+      "event": "click-instagram"
     },
     {
       "label": "Contact Me",
