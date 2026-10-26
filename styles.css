@@ -1,6 +1,10 @@
 /* Dunkles Linktree-Theme — bewusst schlicht gehalten, Feintuning kommt später. */
 
-* { margin: 0; padding: 0; box-sizing: border-box; }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
@@ -16,13 +20,16 @@ body {
 }
 
 /* --- Profil --- */
-.profile { text-align: center; }
+.profile {
+  text-align: center;
+}
 
 .avatar {
   width: 112px;
   height: 112px;
   border-radius: 50%;
   object-fit: cover;
+  object-position: center;
   background: #3a3a3a;
 }
 
@@ -52,7 +59,10 @@ body {
   display: inline-flex;
 }
 
-.social-icon svg { width: 28px; height: 28px; }
+.social-icon svg {
+  width: 28px;
+  height: 28px;
+}
 
 /* --- Link-Karten --- */
 .links {
@@ -98,7 +108,9 @@ body {
 }
 
 /* Keine Thumbnail davor → kein Ausgleich nötig */
-.card .card-text:first-child { margin-right: 0; }
+.card .card-text:first-child {
+  margin-right: 0;
+}
 
 .card-label {
   font-size: 1.05rem;
@@ -114,7 +126,11 @@ body {
   color: #9ca3af;
 }
 
-.card-sublabel svg { width: 15px; height: 15px; flex-shrink: 0; }
+.card-sublabel svg {
+  width: 15px;
+  height: 15px;
+  flex-shrink: 0;
+}
 
 /* Große JEMP-Karte: Bild oben, Label darunter */
 .card.featured {
