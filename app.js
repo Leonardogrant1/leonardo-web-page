@@ -52,8 +52,11 @@ async function main() {
     // ?ref=ig/tiktok/x als utm_source weiterreichen (nur wo refToUtm gesetzt ist)
     if (ref && link.refToUtm) url.searchParams.set('utm_source', ref);
     a.href = url.toString();
-    a.target = '_blank';
-    a.rel = 'noopener';
+    // mailto-Links im selben Tab öffnen (neuer Tab bliebe leer)
+    if (url.protocol !== 'mailto:') {
+      a.target = '_blank';
+      a.rel = 'noopener';
+    }
     if (link.event) a.dataset.umamiEvent = link.event;
 
     if (link.image) {

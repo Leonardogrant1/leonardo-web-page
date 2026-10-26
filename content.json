@@ -34,6 +34,11 @@
       "url": "https://www.instagram.com/leo.granetto",
       "image": "assets/instagram-business.svg",
       "event": "click-instagram-business"
+    },
+    {
+      "label": "Contact Me",
+      "url": "mailto:leonardogranetto.business@gmail.com",
+      "event": "click-contact"
     }
   ],
   "umami": {
