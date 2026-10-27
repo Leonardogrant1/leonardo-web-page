@@ -13,6 +13,32 @@ body {
   min-height: 100vh;
 }
 
+/* --- Hintergrundbild oben, blendet in den Seitenhintergrund aus --- */
+.bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 65vh;
+  background: url("assets/background.svg") center / cover no-repeat;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.bg::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  /* Fade: oben leicht abgedunkelt für Lesbarkeit, unten voll in #2a2a2a */
+  background: linear-gradient(
+    to bottom,
+    rgba(42, 42, 42, 0.35) 0%,
+    rgba(42, 42, 42, 0.55) 45%,
+    rgba(42, 42, 42, 0.85) 75%,
+    #2a2a2a 100%
+  );
+}
+
 .page {
   max-width: 640px;
   margin: 0 auto;

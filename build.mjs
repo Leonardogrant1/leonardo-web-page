@@ -14,6 +14,8 @@ const ICONS = {
     '<svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2.16c3.2 0 3.58.01 4.85.07 3.25.15 4.77 1.69 4.92 4.92.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.15 3.23-1.66 4.77-4.92 4.92-1.27.06-1.64.07-4.85.07s-3.58-.01-4.85-.07c-3.26-.15-4.77-1.7-4.92-4.92C2.17 15.58 2.16 15.2 2.16 12s.01-3.58.07-4.85C2.38 3.92 3.9 2.38 7.15 2.23 8.42 2.17 8.8 2.16 12 2.16zm0 1.8c-3.15 0-3.52.01-4.77.07-2.43.11-3.56 1.26-3.67 3.67-.06 1.25-.07 1.62-.07 4.77s.01 3.52.07 4.77c.11 2.4 1.24 3.56 3.67 3.67 1.25.06 1.62.07 4.77.07s3.52-.01 4.77-.07c2.43-.11 3.56-1.27 3.67-3.67.06-1.25.07-1.62.07-4.77s-.01-3.52-.07-4.77c-.11-2.41-1.24-3.56-3.67-3.67-1.25-.06-1.62-.07-4.77-.07zm0 3.06a5 5 0 1 1 0 9.97 5 5 0 0 1 0-9.97zm0 1.8a3.18 3.18 0 1 0 0 6.37 3.18 3.18 0 0 0 0-6.37zm5.2-3.2a1.16 1.16 0 1 1 0 2.33 1.16 1.16 0 0 1 0-2.33z"/></svg>',
   mail:
     '<svg viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.8" d="M3 5.5h18v13H3zM3 6l9 7 9-7"/></svg>',
+  x:
+    '<svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24h-6.657l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231 5.45-6.231zm-1.161 17.52h1.833L7.084 4.126H5.117l11.966 15.644z"/></svg>',
 };
 
 const socials = content.socials
@@ -71,6 +73,7 @@ const html = `<!doctype html>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <div class="bg" aria-hidden="true"></div>
   <main class="page">
     <header class="profile">
       <img class="avatar" src="${esc(content.profile.avatar)}" alt="${esc(content.profile.name)}">

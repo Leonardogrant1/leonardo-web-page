@@ -14,13 +14,18 @@
       "icon": "instagram",
       "url": "https://www.instagram.com/leonardo.granetto",
       "event": "social-instagram"
+    },
+    {
+      "icon": "x",
+      "url": "https://x.com/leo_granetto",
+      "event": "social-x"
     }
   ],
   "links": [
     {
       "label": "JEMP – Get your Training Plan",
-      "url": "https://jemp.app",
-      "image": "assets/jemp.svg",
+      "url": "https://jemp.app/c/leo10",
+      "image": "assets/jemp.jpg",
       "event": "click-jemp",
       "featured": true,
       "refToUtm": true
@@ -34,14 +39,20 @@
     {
       "label": "Instagram (Lifestyle)",
       "url": "https://www.instagram.com/leonardo.granetto",
-      "image": "assets/instagram-lifestyle.svg",
+      "image": "assets/instagram-lifestyle.jpg",
       "event": "click-instagram-lifestyle"
     },
     {
       "label": "Instagram",
       "url": "https://www.instagram.com/leo.granetto",
-      "image": "assets/instagram.svg",
+      "image": "assets/instagram.jpg",
       "event": "click-instagram"
+    },
+    {
+      "label": "X",
+      "url": "https://x.com/leo_granetto",
+      "image": "assets/x.jpg",
+      "event": "click-x"
     },
     {
       "label": "Contact Me",
